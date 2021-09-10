@@ -113,6 +113,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width:320px;
     height: auto;
     padding-top: 59px;
     padding-bottom: 30px;
@@ -152,10 +153,23 @@ main {
 
 .main--tables-container {
     align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+.main--table {
+    align-self: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
     width: 60%;
     min-width: 224px;
     max-width: 300px;
-    height: auto;
 }
 
 .main--table .main--table-title p {
@@ -226,7 +240,7 @@ main {
 }
 
 .main--table .main--table-date {
-    width: auto;
+    margin: 0 auto;
     padding: 8px;
     font-size: 1.2rem;
     border-radius: 8px;
@@ -242,6 +256,92 @@ main {
     background: var(--soft-blue);
 }
 
-.main--tables-container .main--table:first-child {
-    margin-bottom: 30px;
+.main--product-detail {
+    background: var(--warm-black);
+    color: #fff;
+    padding: 25px 10px;
+}
+
+.main--product-detail > span {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: -35px;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 25px;
+    background: url(https://i.ibb.co/4tL16BQ/batata.png) center/cover no-repeat;
+}
+
+.product--detail-title {
+    text-align: center;
+}
+
+.product--detail-title h2 {
+    padding: 35px 0 22px 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: #fff;
+}
+
+.product--detail-title p {
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product--cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product--detail-card {
+    margin: 15px 15px;
+    padding: 15px 15px 25px;
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    border-radius: 4px;
+    background: #282623;
+}
+
+.product--card-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.product--detail-card:first-child .product--card-icon {
+    background: url(https://i.ibb.co/GkQhkP0/clock.png) center/cover no-repeat;
+}
+
+.product--detail-card:nth-child(2) .product--card-icon {
+    background: url(https://i.ibb.co/jvJymvS/eye.png) center/cover no-repeat;
+}
+
+.product--detail-card:nth-child(3) .product--card-icon {
+    background: url(https://i.ibb.co/bRxGPwX/dollar-sign.png) center/cover no-repeat;
+}
+
+.product--detail-card:nth-child(4) .product--card-icon {
+    background: url(https://i.ibb.co/z7pL9B0/check-circle.png) center/cover no-repeat;
+}
+
+.product--detail-card .prouct--card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product--detail-card .product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #808080;
 }
