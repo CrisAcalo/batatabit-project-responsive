@@ -45,7 +45,6 @@ header {
     min-width: 320px;
     height: 334px;
     background: var(--linear-gradient);
-    background-size: 400% 400%;
     box-shadow: 2px 0 10px 3px #aaa;
 }
 
@@ -368,7 +367,7 @@ main {
     min-width: 320px;
     padding: 64px 0 70px;
     text-align: center;
-    background: var(--off-white);
+    background:  var(--off-white);
 }
 
 .plans-title {
@@ -383,6 +382,7 @@ main {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
+    color: var(--black);
 }
 
 .plans-title p {
@@ -390,4 +390,126 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: #757575;
+}
+
+.plan-card {
+    position: relative;
+    width: 65%;
+    min-width: 230px;
+    max-width: 250px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    border-radius: 40px;
+}
+
+.plan-card > p {
+    position: relative;
+    top: -15px;
+    left: calc(50% - 50px);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.45rem;
+    width: 100px;
+    padding: 8px;
+    color: var(--just-white);
+    border-radius: 8px;
+}
+
+.plan--info-container .plan--card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+}
+
+.plan--info-container .plan--card-price {
+    padding: 5px 0;
+    font-family: var(--font-inter);
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.2rem;
+}
+
+.plan--info-container .plan--card-price span,
+.plan--info-container .plan--card-saving {
+    vertical-align: 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.plan--info-container .plan--card-saving {
+    padding: 10px 0 16px;
+    color: var(--just-white);
+}
+
+.plan--info-container .plan--card-cta {
+    width: 150px;
+    height: 48px;
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    border-style: none;
+    border-radius: 100px;
+}
+
+.plan--card-cta span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://img.icons8.com/ios-glyphs/30/000000/arrow.png) center/cover no-repeat;
+    vertical-align: text-bottom;
+}
+
+.plan-card:nth-child(1) {
+    background: var(--secondary-blue);
+    box-shadow:  3px 3px 2px #1683d2,
+             -3px -3px 2px #29f5ff;
+}
+
+.plan-card:nth-child(1) > p {
+    background: #0b3f65;
+    color: var(--off-white);
+} 
+
+.plan-card:nth-child(1) .plan--card-cta {
+    background: #1A9AF7;
+    box-shadow:  5px 5px 10px #1683d2,
+                 -5px -5px 10px #1eb1ff;
+}
+
+.plan-card:nth-child(2) {
+    background: #20df46;
+    box-shadow:  3px 3px 2px #1bbe3c,
+                -3px -3px 2px #25ff51;
+}
+
+.plan-card:nth-child(2) > p {
+    background: #1bbe3c;
+    color: var(--off-white);
+}
+
+.plan-card:nth-child(2) .plan--card-cta {
+    background: #20df46;
+box-shadow:  5px 5px 10px #1bbe3c,
+             -5px -5px 10px #25ff51;
+}
+
+.plan-card:nth-child(3) {
+    background: var(--bitcoin-orange);
+    box-shadow:  3px 3px 2px #d27d16,
+                -3px -3px 2px #ffa91e;
+}
+
+.plan-card:nth-child(3) > p {
+    background: #d27d16;
+    color: var(--off-white);
+} 
+
+.plan-card:nth-child(3) .plan--card-cta {
+    background: #F7931A;
+    box-shadow:  5px 5px 10px #d27d16,
+                 -5px -5px 10px #ffa91e;
 }
