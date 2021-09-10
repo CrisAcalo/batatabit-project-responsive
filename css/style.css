@@ -45,6 +45,7 @@ header {
     height: 334px;
     background: var(--linear-gradient);
     background-size: 400% 400%;
+    box-shadow: 2px 0 10px 3px #aaa;
 }
 
 header img {
@@ -153,77 +154,94 @@ main {
     align-self: center;
     width: 60%;
     min-width: 224px;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
 }
 
-.main--tables-container div p {
+.main--table .main--table-title p {
     margin-bottom: 12px;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #FF9536;
+    color: var(--bitcoin-orange);
 }
 
-.main--tables-container section {
+.main--table section {
     display: grid;
     grid-template: repeat(4,60px) / repeat(2,1fr);
     grid-gap: 2px 2px;
+    margin-bottom: 25px;
     font-family: var(--font-inter);
 }
 
-.main--tables-container section .main--table-value{
+.main--table section .main--table-value{
     background: var(--just-white);
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
 
-.main--tables-container section .main--table-value:nth-child(odd) {
+.main--table section .main--table-value:nth-child(odd) {
     font-size: 1.6rem;
     font-weight: 500;
     color: #B5B0AC;
 }
 
-.main--tables-container section .main--table-value:nth-child(even) {
+.main--table section .main--table-value:nth-child(even) {
     font-size: 1.4rem;
     color: #757575;
 }
 
-.main--tables-container section .main--table-value span {
+.main--table section .main--table-value span {
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-left: 10px;
 }
 
-.main--tables-container section .main--table-value:nth-child(2) span {
+.main--table section .main--table-value:nth-child(2) span,
+.main--table-value:nth-child(6) span,
+.main--table-value:nth-child(8) span
+ {
     background: url(https://i.ibb.co/qsc9R2G/trending-down.png) center/cover no-repeat;
 }
 
-.main--tables-container section .main--table-value:nth-child(4) span {
+.main--table section .main--table-value:nth-child(4) span {
     background: url(https://i.ibb.co/9Wt1n2C/trending-up.png) center/cover no-repeat;
 }
 
-.main--tables-container section .main--table-value:nth-child(6) span {
-    background: url(https://i.ibb.co/qsc9R2G/trending-down.png) center/cover no-repeat;
-}
-
-.main--tables-container section .main--table-value:nth-child(8) span {
-    background: url(https://i.ibb.co/qsc9R2G/trending-down.png) center/cover no-repeat;
-}
-
-.main--tables-container section .main--table-value:nth-child(1) {
+.main--table section .main--table-value:nth-child(1) {
     border-top-left-radius: 15px;
 }
 
-.main--tables-container section .main--table-value:nth-child(7) {
+.main--table section .main--table-value:nth-child(7) {
     border-bottom-left-radius: 15px;
 }
 
-.main--tables-container section .main--table-value:nth-child(2) {
+.main--table section .main--table-value:nth-child(2) {
     border-top-right-radius: 15px;
 }
 
-.main--tables-container section .main--table-value:nth-child(8) {
+.main--table section .main--table-value:nth-child(8) {
     border-bottom-right-radius: 15px;
+}
+
+.main--table .main--table-date {
+    width: auto;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background: var(--soft-orange);
+    color: #757575;
+}
+
+.main--table:nth-child(2) .main--table-title p {
+    color: var(--secondary-blue);
+}
+
+.main--table:nth-child(2) .main--table-date {
+    background: var(--soft-blue);
+}
+
+.main--tables-container .main--table:first-child {
+    margin-bottom: 30px;
 }
