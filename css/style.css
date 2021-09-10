@@ -550,8 +550,10 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-width: 320px;
     height: 150px;
     background: var(--bitcoin-orange);
+    color: var(--just-white);
 }
 
 .footer--sections-container {
@@ -579,6 +581,11 @@ footer {
     margin-right: 5px;
     width: 20px;
     vertical-align: text-bottom;
+}
+
+.footer--logo {
+    text-align: center;
+    padding: 0 10px;
 }
 
 .footer--logo img {
